@@ -8,7 +8,22 @@ function App() {
     { id: 4, name: "orange", calories: 43 },
     { id: 5, name: "grape", calories: 69 },
   ];
-  // return <p>hello</p>;
-  return <List items={fruits} catagory={"Fruits"} />;
+
+  const vegetables = [
+    { id: 1, name: "carrot", calories: 41 },
+    { id: 2, name: "broccoli", calories: 55 },
+    { id: 3, name: "spinach", calories: 23 },
+    { id: 4, name: "tomato", calories: 18 },
+    { id: 5, name: "cucumber", calories: 16 },
+  ];
+
+  return (
+    <>
+      <List></List>
+      <List items={fruits} category={"Fruits"} />
+      <List items={vegetables} category={"Vegetables"} />
+    </>
+  );
 }
+
 export default App;
